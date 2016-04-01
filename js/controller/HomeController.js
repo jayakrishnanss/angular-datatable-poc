@@ -2,6 +2,7 @@ angular.module('DatatableApp', ['DatatableApp.controllers','datatables']);
 angular.module('DatatableApp.controllers', []).controller('dataTableController', function(
 
 		$scope,DTOptionsBuilder, DTColumnBuilder) {
+		var vm = this;
 		$scope.model = {
 	        userList: [{
 	            id: 1,
